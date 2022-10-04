@@ -1,0 +1,39 @@
+print("Welcome to my quiz game")
+
+playing = input("Do you want to play? ")
+score = 0
+
+if playing.lower() != "yes":
+    quit()
+print("okay let's play! ")
+
+answer = input("what is the full form of SIM? ")
+if answer.lower() == "subscriber identity module":
+    print("Correct :)")
+    score += 1
+else:
+    print("Incorrect :(")
+
+answer = input("what is the full form of PAN? ")
+if answer.lower() == "permanent account number":
+    print("Correct :)")
+    score += 1
+else:
+    print("Incorrect :(")
+
+answer = input("what is the full form of OTP? ")
+if answer.lower() == "one time password":
+    print("Correct :)")
+    score += 1
+else:
+    print("Incorrect :(")
+
+answer = input("what is the full form of PIN? ")
+if answer.lower() == "personal identification number":
+    print("Correct :)")
+    score += 1
+else:
+    print("Incorrect :(")
+
+print("YOU GOT " + str(score) + " QUESTIONS RIGHT")
+print("YOU GOT " + str(score/4*100) + "%")
